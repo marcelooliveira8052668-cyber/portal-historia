@@ -1,76 +1,103 @@
-/* ===== Estrutura geral ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
 
-    background-image: url("../imagens/fundo-historia.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
 header {
-    background-color: #1e3a8a;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 100px 20px;
 }
 
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 30px;
+header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-/* ===== Cards ===== */
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffaa00;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sobre {
+    background: white;
+}
+
+.servicos {
+    background: #f4f6f9;
+}
 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
+    margin-top: 40px;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
-.card h2 {
-    margin-bottom: 10px;
-    color: #1e3a8a;
-}
-
-.card p {
-    color: #333;
-}
-
-.card a {
-    text-decoration: none;
+.contato {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
     color: white;
-    background: #2563eb;
-    padding: 8px 12px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
 }
 
-.card a:hover {
-    background: #1e40af;
+.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.whatsapp:hover {
+    background: #1ebe5d;
 }
 
 footer {
-    background-color: #111827;
+    background: #111;
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
 }
